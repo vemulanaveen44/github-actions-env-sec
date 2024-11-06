@@ -15,7 +15,7 @@ jobs:
       #MONGODB_PASSWORD: Nikhil123 
       MONGODB_USERNAME: ${{ secrets.DBUSER_NAME }}
       MONGODB_PASSWORD: ${{secrets.DB_PASSWORD }}
-      PORT: ${{ vars.PORT }}
+      PORT: 8080
     steps:
       - name: Get Code
         uses: actions/checkout@v3
